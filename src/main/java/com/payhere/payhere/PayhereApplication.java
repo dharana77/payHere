@@ -2,7 +2,10 @@ package com.payhere.payhere;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
 @SpringBootApplication
 public class PayhereApplication {
 
@@ -10,4 +13,8 @@ public class PayhereApplication {
 		SpringApplication.run(PayhereApplication.class, args);
 	}
 
+	@GetMapping(value = "/hello")
+	public String HelloWorld() {
+		return "Hello World";
+	}
 }
