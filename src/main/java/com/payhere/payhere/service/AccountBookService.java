@@ -1,6 +1,7 @@
 package com.payhere.payhere.service;
 
 import com.payhere.payhere.domain.AccountBook;
+import com.payhere.payhere.dto.AccountBookResponseDto;
 import com.payhere.payhere.dto.AccountBookSaveRequestDto;
 import com.payhere.payhere.dto.AccountBookUpdateRequestDto;
 import com.payhere.payhere.repository.AccountBookRepository;
@@ -25,4 +26,9 @@ public class AccountBookService {
         return id;
     }
 
+    public AccountBookResponseDto findById (Long id) {
+        AccountBook entity = accountBookRepository.findById(id).orElseThrow( () -> new IllegalArgumentException("해당 게시글이 없습니다. id =" + id));
+
+        return  new AccountBookResponseDto(entity);
+    }
 }
