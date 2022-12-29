@@ -21,5 +21,5 @@ public class AccountBookController {
         return  accountBookService.update(id, requestDto);
     }
 
-    
+
 }
