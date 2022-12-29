@@ -13,3 +13,17 @@ services:
       - ./db/mysql/data:/var/lib/mysql
       - ./db/mysql/init:/docker-entrypoint-initdb.d
     platform: linux/amd64
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: app
+    ports:
+      - 8080:8080
+    depends_on:
+      - local-db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://local-db:3306/
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root

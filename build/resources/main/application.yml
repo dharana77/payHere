@@ -11,8 +11,10 @@ spring:
     password: root
 
   jpa:
+    generate-ddl: true
     hibernate:
       ddl-auto: create
+
     properties:
       hibernate:
         show_sql: true

@@ -34,4 +34,9 @@ public class AccountBook {
         this.price = price;
         this.consumedDetail = consumedDetail;
     }
+
+    public void update(int price, String consumedDetail) {
+        this.price = price;
+        this.consumedDetail = consumedDetail;
+    }
 }
