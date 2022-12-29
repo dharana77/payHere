@@ -27,5 +27,10 @@ public class AccountBookController {
         return accountBookService.findById(id);
     }
 
+    @DeleteMapping("/api/v1/accountBook/delete/{id}")
+    public Long delete(@PathVariable Long id) {
+        accountBookService.delete(id);
+        return id;
+    }
 
 }

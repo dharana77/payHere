@@ -26,8 +26,14 @@ public class AccountBookService {
         return id;
     }
 
+    @Transactional
+    public void  delete(Long id) {
+        AccountBook posts = accountBookRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("해당 가계부가 없습니다. id=" + id));
+        accountBookRepository.delete(posts);
+    }
+
     public AccountBookResponseDto findById (Long id) {
-        AccountBook entity = accountBookRepository.findById(id).orElseThrow( () -> new IllegalArgumentException("해당 게시글이 없습니다. id =" + id));
+        AccountBook entity = accountBookRepository.findById(id).orElseThrow( () -> new IllegalArgumentException("해당 가계부가 없습니다. id =" + id));
 
         return  new AccountBookResponseDto(entity);
     }
