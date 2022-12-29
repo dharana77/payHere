@@ -1,5 +1,6 @@
 # payHere
-payHere
+
+## 구현 내용
 
 
 1. 고객은 이메일과 비밀번호 입력을 통해서 회원 가입을 할 수 있습니다. (spring security 기본 로그인으로 대체) (x)
