@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.106s</div>
+<div class="counter">0.094s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,7 +81,7 @@
 <tr>
 <td class="success">가계부 저장 테스트</td>
 <td class="success">createAccountBookTest()</td>
-<td class="success">0.106s</td>
+<td class="success">0.094s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -89,14 +89,14 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>17:08:30.503 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [AccountBookRepositoryTest]: using SpringBootContextLoader
-17:08:30.506 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.payhere.payhere.repository.AccountBookRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-17:08:30.507 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.payhere.payhere.repository.AccountBookRepositoryTest]: AccountBookRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-17:08:30.523 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [AccountBookRepositoryTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
-17:08:30.567 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/jingyounglee/Desktop/payhere/payHere/build/classes/java/main/com/payhere/payhere/PayhereApplication.class]
-17:08:30.568 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.payhere.payhere.PayhereApplication for test class com.payhere.payhere.repository.AccountBookRepositoryTest
-17:08:30.614 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [AccountBookRepositoryTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, WithSecurityContextTestExecutionListener, EventPublishingTestExecutionListener, ReactorContextTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
-17:08:30.615 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [AccountBookRepositoryTest], class annotated with @DirtiesContext [false] with mode [null]
+<pre>00:23:38.330 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [AccountBookRepositoryTest]: using SpringBootContextLoader
+00:23:38.333 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.payhere.payhere.repository.AccountBookRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+00:23:38.334 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.payhere.payhere.repository.AccountBookRepositoryTest]: AccountBookRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:23:38.345 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [AccountBookRepositoryTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+00:23:38.391 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/jingyounglee/Desktop/payhere/payHere/build/classes/java/main/com/payhere/payhere/PayhereApplication.class]
+00:23:38.392 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.payhere.payhere.PayhereApplication for test class com.payhere.payhere.repository.AccountBookRepositoryTest
+00:23:38.439 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [AccountBookRepositoryTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, WithSecurityContextTestExecutionListener, EventPublishingTestExecutionListener, ReactorContextTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+00:23:38.440 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [AccountBookRepositoryTest], class annotated with @DirtiesContext [false] with mode [null]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -106,17 +106,17 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.1)
 
-2022-12-29T17:08:30.771+09:00  INFO 94444 --- [    Test worker] c.p.p.r.AccountBookRepositoryTest        : Starting AccountBookRepositoryTest using Java 17.0.5 with PID 94444 (started by jingyounglee in /Users/jingyounglee/Desktop/payhere/payHere)
-2022-12-29T17:08:30.772+09:00  INFO 94444 --- [    Test worker] c.p.p.r.AccountBookRepositoryTest        : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2022-12-29T17:08:31.068+09:00  INFO 94444 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-12-29T17:08:31.100+09:00  INFO 94444 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
-2022-12-29T17:08:31.322+09:00  INFO 94444 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-12-29T17:08:31.347+09:00  INFO 94444 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
-2022-12-29T17:08:31.423+09:00  WARN 94444 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2022-12-29T17:08:31.477+09:00  INFO 94444 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-12-29T17:08:31.569+09:00  INFO 94444 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2022-12-29T17:08:31.570+09:00  INFO 94444 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-12-29T17:08:31.581+09:00  INFO 94444 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-12-31T00:23:38.579+09:00  INFO 11039 --- [    Test worker] c.p.p.r.AccountBookRepositoryTest        : Starting AccountBookRepositoryTest using Java 17.0.5 with PID 11039 (started by jingyounglee in /Users/jingyounglee/Desktop/payhere/payHere)
+2022-12-31T00:23:38.580+09:00  INFO 11039 --- [    Test worker] c.p.p.r.AccountBookRepositoryTest        : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2022-12-31T00:23:38.849+09:00  INFO 11039 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-31T00:23:38.878+09:00  INFO 11039 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+2022-12-31T00:23:39.075+09:00  INFO 11039 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-31T00:23:39.101+09:00  INFO 11039 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2022-12-31T00:23:39.177+09:00  WARN 11039 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-12-31T00:23:39.228+09:00  INFO 11039 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-31T00:23:39.317+09:00  INFO 11039 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2022-12-31T00:23:39.318+09:00  INFO 11039 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-31T00:23:39.329+09:00  INFO 11039 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: 
     
     drop table if exists account_book cascade 
@@ -133,18 +133,18 @@ Hibernate:
         price integer not null,
         primary key (account_book_id)
     )
-2022-12-29T17:08:31.911+09:00  INFO 94444 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-12-29T17:08:31.915+09:00  INFO 94444 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-12-29T17:08:32.113+09:00  WARN 94444 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-12-29T17:08:32.283+09:00  INFO 94444 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
-2022-12-29T17:08:32.308+09:00  WARN 94444 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+2022-12-31T00:23:39.674+09:00  INFO 11039 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-31T00:23:39.679+09:00  INFO 11039 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-31T00:23:39.855+09:00  WARN 11039 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-31T00:23:40.018+09:00  INFO 11039 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-12-31T00:23:40.041+09:00  WARN 11039 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: cd83fdf4-72b6-4c36-bbf3-52959da18dc5
+Using generated security password: 19fe1aad-1053-4cca-af4d-5da80e63cf80
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2022-12-29T17:08:32.383+09:00  INFO 94444 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1b08d26f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@565030b7, org.springframework.security.web.context.SecurityContextHolderFilter@256d8f17, org.springframework.security.web.header.HeaderWriterFilter@bb1b872, org.springframework.security.web.csrf.CsrfFilter@630bd5e7, org.springframework.security.web.authentication.logout.LogoutFilter@1abd1a28, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@260fffec, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7a482b3a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@752fecbf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@55731ccd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@659e003e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e111aeb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2eb31735, org.springframework.security.web.access.ExceptionTranslationFilter@1512efe9, org.springframework.security.web.access.intercept.AuthorizationFilter@43c3354]
-2022-12-29T17:08:32.413+09:00  INFO 94444 --- [    Test worker] c.p.p.r.AccountBookRepositoryTest        : Started AccountBookRepositoryTest in 1.77 seconds (process running for 2.34)
+2022-12-31T00:23:40.107+09:00  INFO 11039 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@42684d86, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45a05350, org.springframework.security.web.context.SecurityContextHolderFilter@5ef48b08, org.springframework.security.web.header.HeaderWriterFilter@4d529bc0, org.springframework.security.web.csrf.CsrfFilter@474deb4c, org.springframework.security.web.authentication.logout.LogoutFilter@256d8f17, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@e21d73, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@596d17f4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7d6a9d5e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@981d9d2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b625e82, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a0aa5e2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74ed7111, org.springframework.security.web.access.ExceptionTranslationFilter@7f9b851c, org.springframework.security.web.access.intercept.AuthorizationFilter@66428512]
+2022-12-31T00:23:40.136+09:00  INFO 11039 --- [    Test worker] c.p.p.r.AccountBookRepositoryTest        : Started AccountBookRepositoryTest in 1.675 seconds (process running for 2.159)
 Hibernate: 
     select
         next value for account_book_seq
@@ -167,7 +167,7 @@ AccountBook(id=1, consumedName=테스트 가계부, price=1000, consumedDetail=�
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6</a> at Dec 29, 2022, 5:08:32 PM</p>
+<a href="http://www.gradle.org">Gradle 7.6</a> at Dec 31, 2022, 12:23:40 AM</p>
 </div>
 </div>
 </body>
